@@ -3,8 +3,10 @@ dunwoody advising and student academic plan building app
 dunwoody senior project by David Magnuson and Anders Nelson
 
 ## using yarn instead of npm
-make sure to have yarn installed 
-`npm install -g yarn` (might need sudo permissions)
+make sure to have yarn installed <br/>
+`npm install -g yarn` (might need sudo permissions)<br/>
+clone repository then install dependencies<br/>
+`yarn add` (npm install equivilent)
 
 ## Available Scripts
 
