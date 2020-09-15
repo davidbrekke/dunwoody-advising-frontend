@@ -1,0 +1,7 @@
+.header{
+    width: 100vw;
+}
+.header-logo {
+    height: 5rem;
+    cursor: pointer;
+}
