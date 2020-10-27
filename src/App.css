@@ -6,3 +6,10 @@
     justify-content: space-between;
     align-items: center;
 }
+:root {
+    --dun-red: rgb(158,41,51);
+    --dun-red-hover: rgba(158,41,51,.9);
+    --white: #f4f4f6;
+    --dark-text:#343633;
+    --grey:#E2E2E2;
+}

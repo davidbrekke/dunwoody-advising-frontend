@@ -11,6 +11,7 @@ function Landing() {
         <div className="landing">
             <h1 className='landing-head'>hi!</h1>
             <Link to='/courses'>courses</Link>
+            <Link to='/plan'>plan</Link>
         </div>
     )
 

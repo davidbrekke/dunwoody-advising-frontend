@@ -6,6 +6,7 @@ import {
 } from "react-router-dom"
 import LandingPage from './pages/LandingPage'
 import CoursesPage from './pages/CoursesPage'
+import PlanPage from './pages/PlanPage'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Switch>
         <Route path='/'  exact component={LandingPage}/>
         <Route path='/courses'  component={CoursesPage}/>
+        <Route path='/plan'  component={PlanPage}/>
       </Switch>
     </div>
   )
