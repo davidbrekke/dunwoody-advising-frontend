@@ -1,0 +1,15 @@
+.landing{
+    background: white;
+    padding: 6rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.landing-head {
+    color: #141301;
+    font-family: sans-serif;
+}
