@@ -1,16 +1,16 @@
 import React from 'react'
+import Courses from '../components/courses/Courses'
 import Footer from '../components/footer/Footer'
 import Header from '../components/header/Header'
-import Landing from '../components/landing/Landing'
 
-function LandingPage() {
+function CoursesPage() {
     return (
         <>
             <Header/>
-            <Landing/>
+            <Courses/>
             <Footer/>
         </>
     )
 }
 
-export default LandingPage
+export default CoursesPage
