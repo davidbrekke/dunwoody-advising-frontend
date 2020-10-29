@@ -7,14 +7,17 @@ import {
 import LandingPage from './pages/LandingPage'
 import CoursesPage from './pages/CoursesPage'
 import PlanPage from './pages/PlanPage'
+import UserPage from './pages/UserPage'
+
 
 function App() {
   return (
     <div className='app'>
       <Switch>
-        <Route path='/'  exact component={LandingPage}/>
-        <Route path='/courses'  component={CoursesPage}/>
-        <Route path='/plan'  component={PlanPage}/>
+        <Route path='/' exact component={LandingPage}/>
+        <Route path='/courses' component={CoursesPage}/>
+        <Route path='/plan' component={PlanPage}/>
+        <Route path='/user' component={UserPage}/>
       </Switch>
     </div>
   )

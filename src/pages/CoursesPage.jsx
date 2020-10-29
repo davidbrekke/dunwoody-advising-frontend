@@ -1,7 +1,7 @@
 import React from 'react'
-import Courses from '../components/courses/Courses'
-import Footer from '../components/footer/Footer'
-import Header from '../components/header/Header'
+import Courses from '../components/Courses'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 function CoursesPage() {
     return (

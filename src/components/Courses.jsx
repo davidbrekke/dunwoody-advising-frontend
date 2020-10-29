@@ -1,6 +1,6 @@
 import React from 'react'
 import { useQuery, gql } from '@apollo/client'
-import Course from '../course/Course'
+import Course from './Course'
 
 const COURSES = gql`
   query {
@@ -8,6 +8,8 @@ const COURSES = gql`
         course_id
         course_code
         instruction_type
+        course_description
+        required
   }
 }
 `;
@@ -19,9 +21,12 @@ function Courses() {
     if (loading) return <p>Loading...</p>
     if (error) return <p>{error}</p>
     
-    return data.courses.map((course) => (
+    return (
+      
+      data.courses.map((course) => (
           <Course key={course.course_code} course={course}/>
         ))
+    )
 }
 
 export default Courses
