@@ -4,7 +4,7 @@ dunwoody senior project by David Magnuson and Anders Nelson
 
 ## using yarn instead of npm
 make sure to have yarn installed <br/>
-`npm install -g yarn` (might need sudo permissions)<br/>
+`npm install -g yarn` (might need sudo permissions)<br/> https://linuxize.com/post/how-to-install-yarn-on-ubuntu-18-04/
 clone repository then install dependencies<br/>
 `yarn install` (npm install equivilent)
 
