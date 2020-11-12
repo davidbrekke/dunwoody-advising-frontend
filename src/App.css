@@ -1,8 +1,19 @@
 .app {
     background: #9e2933;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+:root {
+    --dun-red: rgb(158,41,51);
+    --dun-red-hover: rgba(158,41,51,.9);
+    --modal-overlay: rgba(244, 244, 246,.5);
+    --dun-red-disabled: rgb(220, 182, 185);
+    --white: rgb(244, 244, 246);
+    --whiteClear: rgba(244, 244, 246, .8);
+    --clear: rgba(244, 244, 246, .2);
+    --dark-text:#343633;
+    --grey:#E2E2E2;
 }

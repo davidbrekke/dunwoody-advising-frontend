@@ -1,16 +1,16 @@
 import React from 'react'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import Landing from '../components/Landing'
+import Profile from '../components/Profile'
 
-function LandingPage() {
+function UserPage() {
     return (
         <>
             <Header/>
-            <Landing/>
+                <Profile/>
             <Footer/>
         </>
     )
 }
 
-export default LandingPage
+export default UserPage
