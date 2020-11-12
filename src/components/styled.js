@@ -1,4 +1,3 @@
-import { FaCentercode } from 'react-icons/fa'
 import styled from 'styled-components'
 
 export const Button = styled.button`
@@ -311,4 +310,14 @@ export const FooterLink = styled.a`
     &:hover {
         transform: scale(1.25);
 }
+`
+
+export const AdviseCoursesContainer = styled.div`
+background: white;
+padding: 1rem;
+margin: 1em;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: .5em;
 `
