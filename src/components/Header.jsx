@@ -1,25 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import styled from 'styled-components'
 import logo from '../assets/logo.png'
-
-const HeaderContainer = styled.div`
-    width: 100vw;
-`
-const Logo = styled.img`
-    height: 3.5rem;
-    cursor: pointer;
-    margin: 3rem;
-    margin-left: 5rem;
-`
+import { FaBars } from 'react-icons/fa'
+import { HeaderNav, IconBtn, HeaderContainer, Logo } from './styled'
+import NavModal from './Modals/NavModal'
 
 function Header() {
+
+    const [navIsOpen, setNavIsOpen] = useState(false) // nav bar state
+
+    const openNav = () => setNavIsOpen(true)
+    const closeNav = () => setNavIsOpen(false)
+
     return (
-        <HeaderContainer>         
+        <>
+        <HeaderContainer>  
+            <HeaderNav >
+                <IconBtn onClick={openNav}>
+                    <FaBars/>
+                </IconBtn>
+                <NavModal navIsOpen={navIsOpen} closeNav={closeNav} />
+            </HeaderNav>
             <Link to='/'>
                 <Logo src={logo} alt='Dunwoody'/>
             </Link>
-        </HeaderContainer>   
+        </HeaderContainer>
+        </>
     )
 }
 

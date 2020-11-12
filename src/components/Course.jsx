@@ -1,11 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 
+function Course({course}) {
+    return (
+        <CourseContainer>
+            <CourseTitle>{course.course_description}</CourseTitle>
+            <CourseCode>{course.course_code}</CourseCode>
+        </CourseContainer>    
+    )
+}
+
+export default Course
 
 const CourseContainer = styled.div`
     background: var(--grey);
-    padding: 1rem;
-    border-radius: .5rem;
+    padding: .5rem;
+    border-radius: .25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,27 +25,13 @@ const CourseContainer = styled.div`
     &:hover {
         cursor: pointer;
         background: var(--white);
-        transform: scale(1.05);
+        transform: scale(1.06);
     }
 `
 const CourseTitle = styled.p`
     font-size: 12px;
+    font-weight: bold;
 `
 const CourseCode = styled.p`
     font-size: 10px;
 `
-const CourseType = styled.p`
-    font-size: 8px;
-`
-
-function Course({course}) {
-    return (
-        <CourseContainer>
-            <CourseTitle>{course.course_description}</CourseTitle>
-            <CourseCode>{course.course_code}</CourseCode>
-            <CourseType>{course.instruction_type}</CourseType>
-        </CourseContainer>    
-    )
-}
-
-export default Course

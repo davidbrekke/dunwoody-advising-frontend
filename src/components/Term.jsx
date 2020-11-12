@@ -1,10 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import Courses from './Courses'
 
 const Container = styled.div`
     background: var(--dun-red);
-    padding: 1rem;
+    padding: .5rem;
     border-radius: .25rem;
     display: flex;
     flex-wrap: wrap;
@@ -12,14 +11,15 @@ const Container = styled.div`
     justify-content: center;
     box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, .3);
     margin: .5rem;
-    max-width: 40%;
+    width: 45%;
 `
 
-function Term() {
+function Term({term}) {
 
     return (
         <Container>
-            <Courses/>
+            <h1>{term.season}</h1>
+            <h2>{term.class_level}</h2>
         </Container>
     )
 }

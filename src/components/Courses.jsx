@@ -21,11 +21,13 @@ function Courses() {
     if (loading) return <p>Loading...</p>
     if (error) return <p>{error}</p>
     
+    console.log(data.courses);
     return (
       
       data.courses.map((course) => (
-          <Course key={course.course_code} course={course}/>
+            <Course course={course}/>
         ))
+      
     )
 }
 

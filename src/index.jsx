@@ -8,7 +8,7 @@ import { ApolloProvider } from '@apollo/client'
 
 // connect to graphql API
 const client = new ApolloClient({
-  uri: 'http://192.168.1.48:4000/graphql',
+  uri: 'http://192.168.1.9:4000/graphql',
   cache: new InMemoryCache()
 })
 
